@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5CCE97FF80132D8F73CCFC92"
+               BuildableName = "Setting_Clone_App.app"
+               BlueprintName = "Setting_Clone_App"
+               ReferencedContainer = "container:Setting_Clone_App.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "5CCE97FF80132D8F73CCFC92"
+            BuildableName = "Setting_Clone_App.app"
+            BlueprintName = "Setting_Clone_App"
+            ReferencedContainer = "container:Setting_Clone_App.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+</Scheme>
