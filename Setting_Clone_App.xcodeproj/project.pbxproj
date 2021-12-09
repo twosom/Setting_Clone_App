@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14B3F22E2760FF3A004CA5A8 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B3F22C2760FF3A004CA5A8 /* ProfileCell.swift */; };
+		14B3F22F2760FF3A004CA5A8 /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B3F22D2760FF3A004CA5A8 /* ProfileCell.xib */; };
+		14DA4A8B2762409000CD8A92 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DA4A892762409000CD8A92 /* MenuCell.swift */; };
+		14DA4A8C2762409000CD8A92 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14DA4A8A2762409000CD8A92 /* MenuCell.xib */; };
 		5CCE96CF653FB93CA2B3A908 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CCE95D2B54193DCC56A0018 /* LaunchScreen.storyboard */; };
 		5CCE97AD05E9ACDFB9B770AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CCE940E15E6930B47964955 /* Main.storyboard */; };
 		5CCE97BA815AA732D3556525 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE98EB0083E2ADC2DA7E99 /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14B3F22C2760FF3A004CA5A8 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		14B3F22D2760FF3A004CA5A8 /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
+		14DA4A892762409000CD8A92 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		14DA4A8A2762409000CD8A92 /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 		5CCE954F86AD3E3993646FD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CCE96847E1C3CEC4DC907F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5CCE97D281FA82B2761E866E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +63,10 @@
 				5CCE96847E1C3CEC4DC907F6 /* SceneDelegate.swift */,
 				5CCE98EB0083E2ADC2DA7E99 /* ViewController.swift */,
 				5CCE940E15E6930B47964955 /* Main.storyboard */,
+				14B3F22C2760FF3A004CA5A8 /* ProfileCell.swift */,
+				14B3F22D2760FF3A004CA5A8 /* ProfileCell.xib */,
+				14DA4A892762409000CD8A92 /* MenuCell.swift */,
+				14DA4A8A2762409000CD8A92 /* MenuCell.xib */,
 			);
 			path = Setting_Clone_App;
 			sourceTree = "<group>";
@@ -119,6 +131,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CCE98796B44E11C28E936A9 /* Assets.xcassets in Resources */,
+				14B3F22F2760FF3A004CA5A8 /* ProfileCell.xib in Resources */,
+				14DA4A8C2762409000CD8A92 /* MenuCell.xib in Resources */,
 				5CCE96CF653FB93CA2B3A908 /* LaunchScreen.storyboard in Resources */,
 				5CCE97AD05E9ACDFB9B770AC /* Main.storyboard in Resources */,
 			);
@@ -132,6 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CCE9855E64138B1F2704312 /* AppDelegate.swift in Sources */,
+				14DA4A8B2762409000CD8A92 /* MenuCell.swift in Sources */,
+				14B3F22E2760FF3A004CA5A8 /* ProfileCell.swift in Sources */,
 				5CCE9D3DF39024B81138B16B /* SceneDelegate.swift in Sources */,
 				5CCE97BA815AA732D3556525 /* ViewController.swift in Sources */,
 			);
