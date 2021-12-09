@@ -49,8 +49,12 @@ class ViewController: UIViewController {
         settingTableView.backgroundColor = .systemGray6
 
         settingTableView.register(UINib(nibName: "ProfileCell", bundle: nil), forCellReuseIdentifier: "ProfileCell")
-
         settingTableView.register(UINib(nibName: "MenuCell", bundle: nil), forCellReuseIdentifier: "MenuCell")
+
+        title = "설정"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        view.backgroundColor = .systemGray6
+
     }
 }
 
