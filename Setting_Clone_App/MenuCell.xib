@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,7 +18,6 @@
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q1n-AG-6Pb">
                         <rect key="frame" x="20" y="47" width="40" height="40"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="40" id="Vvm-Ra-hId"/>
                             <constraint firstAttribute="width" constant="40" id="ihw-rQ-giG"/>
@@ -27,7 +25,6 @@
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a3D-7c-F06">
                         <rect key="frame" x="323" y="52" width="30" height="30"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="30" id="d0l-O7-47A"/>
                             <constraint firstAttribute="height" constant="30" id="pwd-z7-KOr"/>
@@ -51,12 +48,12 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="leftImageView" destination="Q1n-AG-6Pb" id="tGj-9e-c4Q"/>
+                <outlet property="middleTitle" destination="xs2-PE-DcQ" id="s2B-Bl-7ux"/>
+                <outlet property="rightImageView" destination="a3D-7c-F06" id="fv5-44-4Wz"/>
+            </connections>
             <point key="canvasLocation" x="176.08695652173915" y="182.8125"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>
