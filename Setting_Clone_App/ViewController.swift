@@ -76,7 +76,7 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
 
     public func numberOfSections(in tableView: UITableView) -> Int {
-        return settingModel.count
+        settingModel.count
     }
 
     /**
@@ -86,18 +86,36 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
        - indexPath:
      */
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == 1 && indexPath.row == 0 {
+
+        /**
+         누르는 시점에 눌려있는 모양을 풀고 싶으면 tableView.deselectRow를 사용한다.
+         */
+        tableView.deselectRow(at: indexPath, animated: true)
+
+
+        if isGeneralSelected(indexPath) {
             if let generalVC: GeneralViewController = UIStoryboard(name: "GeneralViewController", bundle: nil)
                     .instantiateViewController(identifier: "GeneralViewController") as? GeneralViewController {
 
                 navigationController?.pushViewController(generalVC, animated: true)
 
             }
+        } else if isAccountSelected(indexPath) {
+            let myIDViewController = MyIDViewController(nibName: "MyIDViewController", bundle: nil)
+            present(myIDViewController, animated: true)
         }
     }
 
+    private func isAccountSelected(_ indexPath: IndexPath) -> Bool {
+        indexPath.section == 0 && indexPath.row == 0
+    }
+
+    private func isGeneralSelected(_ indexPath: IndexPath) -> Bool {
+        indexPath.section == 1 && indexPath.row == 0
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return settingModel[section].count
+        settingModel[section].count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

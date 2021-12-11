@@ -78,6 +78,10 @@ class GeneralViewController: UIViewController {
         view.backgroundColor = .systemGray6
     }
 
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        print("GeneralViewController Disappeared")
+    }
 }
 
 
@@ -100,7 +104,7 @@ extension GeneralViewController: UITableViewDelegate, UITableViewDataSource {
      - Returns: 테이블 뷰 안의 Section 수
      */
     public func numberOfSections(in tableView: UITableView) -> Int {
-        return modelList.count
+        modelList.count
     }
 
 

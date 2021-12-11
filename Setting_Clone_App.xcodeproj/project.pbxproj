@@ -21,6 +21,8 @@
 		5CCE9CFC1AC299B9DDED95BB /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE9EDB3D1E7CDFE5B4E313 /* GeneralViewController.swift */; };
 		5CCE9D3DF39024B81138B16B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE96847E1C3CEC4DC907F6 /* SceneDelegate.swift */; };
 		5CCE9E7592B3978F1D1A8C39 /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE9B7B52A7686E9AD0A422 /* SettingModel.swift */; };
+		F8B465722764F99A005AE34E /* MyIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B465702764F99A005AE34E /* MyIDViewController.swift */; };
+		F8B465732764F99A005AE34E /* MyIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8B465712764F99A005AE34E /* MyIDViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		5CCE9EDB3D1E7CDFE5B4E313 /* GeneralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
 		5CCE9EF6F376A7423389EB7C /* Setting_Clone_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Setting_Clone_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CCE9FB934391E69EE2B659B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F8B465702764F99A005AE34E /* MyIDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyIDViewController.swift; sourceTree = "<group>"; };
+		F8B465712764F99A005AE34E /* MyIDViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyIDViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				5CCE96847E1C3CEC4DC907F6 /* SceneDelegate.swift */,
 				5CCE98EB0083E2ADC2DA7E99 /* ViewController.swift */,
 				5CCE940E15E6930B47964955 /* Main.storyboard */,
+				F8B465702764F99A005AE34E /* MyIDViewController.swift */,
+				F8B465712764F99A005AE34E /* MyIDViewController.xib */,
 				142DCEDD2764AD5E009E6723 /* GeneralViewController.storyboard */,
 				14B3F22C2760FF3A004CA5A8 /* ProfileCell.swift */,
 				14B3F22D2760FF3A004CA5A8 /* ProfileCell.xib */,
@@ -159,6 +165,7 @@
 				5CCE98796B44E11C28E936A9 /* Assets.xcassets in Resources */,
 				14B3F22F2760FF3A004CA5A8 /* ProfileCell.xib in Resources */,
 				14DA4A8C2762409000CD8A92 /* MenuCell.xib in Resources */,
+				F8B465732764F99A005AE34E /* MyIDViewController.xib in Resources */,
 				5CCE96CF653FB93CA2B3A908 /* LaunchScreen.storyboard in Resources */,
 				5CCE97AD05E9ACDFB9B770AC /* Main.storyboard in Resources */,
 			);
@@ -173,6 +180,7 @@
 			files = (
 				5CCE9855E64138B1F2704312 /* AppDelegate.swift in Sources */,
 				14DA4A8B2762409000CD8A92 /* MenuCell.swift in Sources */,
+				F8B465722764F99A005AE34E /* MyIDViewController.swift in Sources */,
 				14B3F22E2760FF3A004CA5A8 /* ProfileCell.swift in Sources */,
 				5CCE9D3DF39024B81138B16B /* SceneDelegate.swift in Sources */,
 				5CCE97BA815AA732D3556525 /* ViewController.swift in Sources */,
