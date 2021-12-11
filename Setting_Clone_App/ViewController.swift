@@ -38,6 +38,9 @@ class ViewController: UIViewController {
     @IBOutlet
     var settingTableView: UITableView!
 
+    /**
+     메모리에 올릴 때
+     */
     override
     func viewDidLoad() {
         super.viewDidLoad()
@@ -52,9 +55,20 @@ class ViewController: UIViewController {
         settingTableView.register(UINib(nibName: "MenuCell", bundle: nil), forCellReuseIdentifier: "MenuCell")
 
         title = "설정"
-        navigationController?.navigationBar.prefersLargeTitles = true
         view.backgroundColor = .systemGray6
+    }
 
+
+    /**
+     화면이 나오면
+     - Parameter animated:
+     */
+    override
+    func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if let navigationController: UINavigationController = navigationController {
+            navigationController.navigationBar.prefersLargeTitles = true
+        }
     }
 }
 
@@ -65,12 +79,25 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         return settingModel.count
     }
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return settingModel[section].count
+    /**
+     눌렀을 경우
+     - Parameters:
+       - tableView:
+       - indexPath:
+     */
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 1 && indexPath.row == 0 {
+            if let generalVC: GeneralViewController = UIStoryboard(name: "GeneralViewController", bundle: nil)
+                    .instantiateViewController(identifier: "GeneralViewController") as? GeneralViewController {
+
+                navigationController?.pushViewController(generalVC, animated: true)
+
+            }
+        }
     }
 
-    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath)
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return settingModel[section].count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
